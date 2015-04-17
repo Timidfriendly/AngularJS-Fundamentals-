@@ -1,0 +1,25 @@
+{
+  "name": "AngularJS-Fundamentals-",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "bower": "^1.4.1"
+  },
+  "devDependencies": {
+    "bower": "^1.4.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Timidfriendly/AngularJS-Fundamentals-.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Timidfriendly/AngularJS-Fundamentals-/issues"
+  },
+  "homepage": "https://github.com/Timidfriendly/AngularJS-Fundamentals-"
+}
