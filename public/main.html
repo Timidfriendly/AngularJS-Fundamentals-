@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" ng-app="myApp">
 <head>
     <meta charset="utf-8">
     <title>AngularJS Fundamentals</title>
@@ -7,16 +7,21 @@
 <body>
 
 
+    I can add {{1+2}} // This is not part of myApp
 
 
-    <div ng-app>
-    I can add {{1+2}}
+    <h1 ng-controller="HelloWorldCtrl">Yeah the message is {{helloMessage}}</h1>
+    I can add {{1+2}} // This is resolved by myApp
 
-        <p>Input something in the input box:</p>
-        <p>Name : <input type="text" ng-model="name" placeholder="Enter name here"></p>
-        <h1 >Hello {{name}}</h1>
 
-    </div>
     <script src="lib/angularjs/angular.min.js"></script>
+
+    <script type="text/javascript">
+        angular.module('myApp', [])
+                .controller ('HelloWorldCtrl', function($scope) {
+                    $scope.helloMessage = 'yeah'
+                });
+    </script>
+
 </body>
 </html>
